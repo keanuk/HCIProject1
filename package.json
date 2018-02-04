@@ -1,0 +1,24 @@
+{
+  "name": "hciproject1",
+  "version": "1.0.0",
+  "description": "HCI Project 1",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keanuk/HCIProject1.git"
+  },
+  "author": "Keanu Kerr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keanuk/HCIProject1/issues"
+  },
+  "homepage": "https://github.com/keanuk/HCIProject1#readme"
+}
