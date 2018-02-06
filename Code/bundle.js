@@ -7600,13 +7600,17 @@ $(document).ready(function () {
     $('.destContinue').css('display', 'none');
   });
 
+  $('.addButton').click(function() {
+    var val = $('#dirIn').val();
+    $('ul.dirList').append('<li>' + val + '</li>');
+    // e.preventDefault();
+  });
+
   $('#dirForm').submit(function(e){
     var val = $(this).find('.dirIn').val();
     $('ul.dirList').append('<li>' + val + '</li>');
     e.preventDefault();
   });
 });
-
-
 
 },{"https":7}]},{},[38]);

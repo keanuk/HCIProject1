@@ -9,6 +9,10 @@ app.listen(3000, () => console.log('Listening on port 3000'))
 
 var https = require ('https');
 
+var ejs = require('ejs');
+ejs.open = '{{';
+ejs.close = '}}';
+
 var parseString = require('xml2js').parseString;
 var convert = require('xml-js');
 
@@ -20,7 +24,7 @@ let langPath = '/V2/Http.svc/GetLanguagesForTranslate?scope=text';
 let langNamePath = '/V2/Http.svc/GetLanguageNames?locale=en';
 
 let target = 'de-de';
-let text = 'Fuck me';
+let text = 'Hello';
 
 let params = '?to=' + target + '&text=' + encodeURI(text);
 
