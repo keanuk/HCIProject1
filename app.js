@@ -59,7 +59,7 @@ let arr_response_handler = function (response) {
       console.log("end");
       // console.log (JSON.stringify(body));
       parseString(body, function(err, result) {
-        console.log(result.ArrayOfstring);
+        console.log(result);
       });
     });
   response.on ('error', function (e) {
