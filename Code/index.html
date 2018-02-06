@@ -3,33 +3,46 @@
   <head>
      <link rel="stylesheet" href="style.css" type="text/css">
      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
+    <div class="appHeader">
+      <br>
+      <h1 class="appTitle">Directions Translator</h1>
+    </div>
 
     <div id="pickLang">
-      <h1>Choose your languages</h1>
-      Translate from
+      <h3>Choose your languages</h3>
+      <span>Translate from </span>
       <select>
         <option value="">Language List</option>
       </select>
-      to
+      <span> to </span>
       <select>
         <option value="">Language List</option>
       </select>
-      <button>Continue</button>
+      <br>
+      <button class="langContinue card cardHover">CONTINUE</button>
     </div>
 
     <div id="enterDest">
-      <h1>Enter your destination</h1>
+      <h3>Where do you want to go?</h3>
       <form action="">
-        <input type="text" name="destination" value="destination"/>
+        <textarea type="text" name="destination" class="destIn card cardHover"></textarea>
       </form>
-      <button>Continue</button>
+      <button class="destContinue card cardHover">CONTINUE</button>
     </div>
 
     <div id="giveDir">
-
+      <h3>Enter directions: </h3>
+      <form id="#dirForm">
+        <input type="text" name="directions" class="dirIn card cardHover"/>
+        <input type="submit" name="Add"/>
+      </form>
+      <ul class="dirList">
+      </ul>
+      <br>
+      <button class="card cardHover">COMPLETE</button>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
