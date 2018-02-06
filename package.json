@@ -4,6 +4,7 @@
   "description": "HCI Project 1",
   "main": "app.js",
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^4.16.2",
     "http-server": "^0.11.1",
     "mstranslator": "^3.0.0"
