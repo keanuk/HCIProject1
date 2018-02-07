@@ -9,6 +9,7 @@
     "express": "^4.16.2",
     "http-server": "^0.11.1",
     "mstranslator": "^3.0.0",
+    "socket.io": "^2.0.4",
     "xml-js": "^1.6.2",
     "xml2js": "^0.4.19"
   },

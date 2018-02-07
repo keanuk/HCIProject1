@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
      <link rel="stylesheet" href="style.css" type="text/css">
      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -14,12 +15,26 @@
     <div id="pickLang">
       <h3>Choose your languages</h3>
       <span>Translate from </span>
-      <select>
-        <option value="">Language List</option>
+      <select id="lang1">
+        <option value="en-en" selected="selected">English</option>
+        <option value="de-de">German</option>
+        <option value="es-es">Spanish</option>
+        <option value="af-af">Afrikaans</option>
+        <option value="pl-pl">Polish</option>
+        <option value="pa-pa">Punjabi</option>
+        <option value="pt-pt">Portuguese</option>
+        <option value="hi-hi">Hindi</option>
       </select>
       <span> to </span>
-      <select>
-        <option value="">Language List</option>
+      <select id="lang2">
+        <option value="en-en" selected="selected">English</option>
+        <option value="de-de">German</option>
+        <option value="es-es">Spanish</option>
+        <option value="af-af">Afrikaans</option>
+        <option value="pl-pl">Polish</option>
+        <option value="pa-pa">Punjabi</option>
+        <option value="pt-pt">Portuguese</option>
+        <option value="hi-hi">Hindi</option>
       </select>
       <br>
       <button class="langContinue card cardHover">CONTINUE</button>
@@ -37,9 +52,9 @@
       <h3>Enter directions: </h3>
       <form id="#dirForm">
         <input id="dirIn" type="text" name="directions" class="dirIn card cardHover"/>
-        <button type="button" class="addButton card cardHover"/>ADD</button>
+        <button id="directionIn" type="button" class="addButton card cardHover"/>ADD</button>
       </form>
-      <ul class="dirList">
+      <ul id="dirList" class="dirList">
       </ul>
       <br>
       <a href="https://ufl.qualtrics.com/jfe/form/SV_b1JcXgzw0TXWdyR">COMPLETE</a>
@@ -48,7 +63,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script>
-    <script type="text/javascript" src="../app.js"></script>
+    <!-- <script type="text/javascript" src="../app.js"></script> -->
     <!-- <script type="text/javascript" src="script.js"></script> -->
     <script src="bundle.js"></script>
   </body>
